@@ -464,7 +464,7 @@ button.clicked {
     .site-main .about-area .about-title .paragraph p{
         width: 100%;
         margin: 0;
-        font-family: var(--poppins);
+        font-family: Arial, Helvetica, sans-serif;
         padding-left: 10px;
         padding-right: 10px;
         padding-bottom: 30px;
