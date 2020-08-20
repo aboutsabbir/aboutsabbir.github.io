@@ -440,7 +440,6 @@ html{
 
 .site-main .about-area .about-title .paragraph p{
     color: #222;
-    
     font-size: 0.98rem;
     font-style: normal;
     font-weight: 400;
@@ -653,7 +652,6 @@ button.clicked {
 
 .site-main .experience .media{
     margin: 40px 0px;
-    font-family: var(--roboto);
 }
 
 .site-main .experience #education .media .media-body{
@@ -663,7 +661,7 @@ button.clicked {
 }
 
 .site-main .experience #education p{
-    font: normal 400 16px/20px var(--roboto);
+    font: normal 400 16px/20px var(--poppins);
     margin-bottom: 8px;
 }
 
@@ -674,11 +672,11 @@ button.clicked {
     border: 1.3px solid var(--violet-color);
     background: var(--violet-color);
     color: whitesmoke;
-    font: normal 400 13px/17px var(--roboto);
+    font: normal 400 13px/17px var(--poppins);
 }
 
 .site-main .experience #education h4{
-    font-family: var(--roboto);
+    margin-bottom: 11px;
     color: #333;
 }
 
