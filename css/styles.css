@@ -920,6 +920,9 @@ button.clicked {
     font-weight: 400;
     color: #333;
 }
+.site-main .experience .bds p{
+    line-height: 20px;
+}
 
 /* making responsive */
 @media screen and (max-width: 650px){
