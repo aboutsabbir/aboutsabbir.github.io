@@ -1189,7 +1189,7 @@ button.clicked {
     }
 
     .site-main .papers #thesis .thesis p{
-        padding-bottom: 5px;
+        padding-bottom: 8px;
     }
 }
 @media screen and (max-width: 450px){
