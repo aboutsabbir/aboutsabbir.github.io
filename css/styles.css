@@ -272,10 +272,6 @@ html{
 
 /* ------------About area START------------ */
 
-/* about Parallax start */
-
-
-/* about parallax end */
 
 .site-main .about-area .potrait img{
     padding: 0;
@@ -439,9 +435,9 @@ html{
 }
 
 
-.site-main .about-area .about-title .paragraph > p{
+.site-main .about-area .about-title .paragraph p{
     color: #333;
-    font-family: var(--roboto);
+     /* font-family: var(--poppins); */
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
