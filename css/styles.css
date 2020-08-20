@@ -1391,7 +1391,6 @@ button.clicked {
 }
 
 .card-body .media{
-    font-family: var(--roboto);
     margin:0  50px;
 }
 
