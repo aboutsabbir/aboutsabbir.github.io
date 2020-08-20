@@ -51,6 +51,9 @@ html{
     }
 }
 @media screen and (max-width: 768px){
+    .nav-item .nav-link{
+        font:normal 450 15px/2px var(--poppins);
+    }
     .navbar{
         padding: 20px 30px;
     }
@@ -436,8 +439,9 @@ html{
 
 
 .site-main .about-area .about-title .paragraph p{
-    color: #333;
-    font-size: 1rem;
+    color: #222;
+    
+    font-size: 0.98rem;
     font-style: normal;
     font-weight: 400;
     text-align: justify;
