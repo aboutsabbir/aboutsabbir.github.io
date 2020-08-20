@@ -1092,34 +1092,32 @@ button.clicked {
     font-size: 15px;
     margin: 0px 0px 15px 0px;
     color: var(--text-color);
-    font-family: var(--roboto);
 }
 .site-main .papers #thesis .varsity{
-    font: normal 430 17px/25px var(--roboto);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
     color: #444;
     margin-bottom: 0;
 }
 
 .site-main .papers #thesis .thesis-topic{
     font-size: 16px;
+    font-weight: 400;
     margin-top: 4px;
     margin-bottom: 0;
-    font-family: var(--roboto);
     color: #444;
 }
 .site-main .papers #thesis .thesis-title{
-    font-size: 16px;
+    font-size: 15px;
     margin-top: 4px;
     margin-bottom: 0;
-    
-    font-family: var(--roboto);
     color: #444;
 }
 .site-main .papers #thesis .supervisor{
     font-size: 16px;
     margin-top: 4px;
     margin-bottom: 0;
-    font-family: var(--roboto);
     color: #444;
 }
 
@@ -1227,8 +1225,8 @@ button.clicked {
 }
 
 .conference .confBody h6{
-    font-size: 17px;
-    font-family: var(--roboto);
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
 }
 
@@ -1236,8 +1234,8 @@ button.clicked {
     font-size: 15px;
     color: #444;
     font-weight: 400;
+    
     letter-spacing: 0.3px;
-    font-family: var(--roboto);
     line-height: 20px;
     margin: 0 0 5px 0;
 }
