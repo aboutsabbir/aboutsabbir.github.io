@@ -563,8 +563,8 @@ button.clicked {
 }
 
 .site-main .experience .nav-link{
-    color: var(--text-color);
-    opacity: 0.9;
+    color: #333;
+    opacity: 0.85;
 }
 .site-main .experience .nav-item .nav-link:hover{
     background-color: transparent;
