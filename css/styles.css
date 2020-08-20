@@ -1187,6 +1187,10 @@ button.clicked {
         z-index: 1;
         opacity: 50%;
     }
+
+    .site-main .papers #thesis .thesis p{
+        padding-bottom: 5px;
+    }
 }
 @media screen and (max-width: 450px){
     .site-main .papers .nav>li>a{
@@ -1226,7 +1230,7 @@ button.clicked {
 
 .conference .confBody h6{
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--roboto);
     font-weight: 400;
 }
 
@@ -1234,7 +1238,7 @@ button.clicked {
     font-size: 15px;
     color: #444;
     font-weight: 400;
-    
+    font-family: var(--roboto);
     letter-spacing: 0.3px;
     line-height: 20px;
     margin: 0 0 5px 0;
@@ -1271,6 +1275,14 @@ button.clicked {
     .site-main .papers #transaction .transaction{
         padding: 30px 20px;
     }
+    .conference .confBody h6{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .conference .confBody p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
 }
 
 /* color the text of the titles */
