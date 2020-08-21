@@ -1600,6 +1600,7 @@ button.clicked {
 @media screen and (max-width: 812px){
     .site-main .testimonials .testimonial-title p{
         padding: 1rem 1rem;
+        font-size: 13px;
     }
 }
 
