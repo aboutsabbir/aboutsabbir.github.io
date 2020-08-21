@@ -1,0 +1,136 @@
+/* import fonts from fonts.css */
+@import url(./fonts.css);
+
+/* import css variables */
+@import url(./partials/variables.css);
+
+/*  import global css file */
+@import url(./partials/_global.css);
+
+body{
+    background: #efefef;
+}
+
+.gallery .gal-title{
+    padding-top:100px;
+    padding-bottom: 40px;
+    
+}
+.head-title{
+    font-family: var(--poppins);
+}
+
+.gallery .back{
+    text-decoration: none;
+    color: white;
+    background: var(--violet-color);
+    padding: 9px 19px;
+    border-radius: 50px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 10px 10px;
+    transition: opacity 0.15s linear;
+}
+
+.gallery .reload{
+    text-decoration: none;
+    color: white;
+    background: #3498DB;
+    padding: 7px 18px;
+    border-radius: 50px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 10px 10px;
+    transition: opacity 0.15s linear;
+}
+.gallery .back:hover{
+    opacity: 1;
+}
+
+.gallery .reload:hover{
+    opacity: 1;
+}
+
+.gallery .row div{
+    padding: 10px 0;
+}
+
+@media screen and (max-width:680px){
+    .gallery .row div{
+        margin: 0 auto;
+    }
+}
+
+/* navigation start */
+
+.button{
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.gallery-content{
+    padding-top: 40px;
+}
+
+.gallery-content a{
+    text-decoration: none;
+}
+
+.navigation{
+    padding: 15px 0px;
+    padding-bottom:60px;
+}
+.navigation a{
+    margin-right: 5px;
+    padding: 8px 14px;
+    color: #111;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+}
+
+.navigation a.active{
+    color: var(--violet-color);
+}
+
+.ImageContainer div{
+    display: inline-block;
+    padding-bottom: 50px;
+}
+img{
+    margin: 5px 8px;
+    width: 385px;
+    height: 310px;
+    border: none;
+}
+.ImageContainer p{
+    text-align: left;
+    margin-left:6px;
+    color: #E91E63;
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:440px){
+    .ImageContainer div{
+        max-width: 90%;
+    }
+    img{
+        max-width: 100%;
+        height: auto;
+        margin: 5px 0;
+    }
+}
+
+/* Contacct start */
+.contact-title{
+    padding: 70px 0 60px 0;
+}

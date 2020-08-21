@@ -521,117 +521,6 @@ button.clicked {
 
 /*----Experience area start---- */
 
-/* github contribution graph */
-.calendar{
-    margin:0 auto;
-    text-align: center;
-    font-family: "Lato",sans-serif;
-    border-radius: 5px;
-    border: none !important;
-    padding: 20px 20px;
-    box-shadow: var(--box-shadow);
-    background: #ffffff;
-}
-
-.calendar .border{
-    border: none !important;
-}
-.calendar-graph text.month{
-    fill: var(--text-color);
-}
-.calendar-graph text.wday{
-    fill: var(--text-color);
-}
-
-.calendar .contrib-column{
-    border: none !important;
-
-}
-.calendar .contrib-column .text-muted{
-    color: var(--text-color);
-    font-size: 14px;
-    font-family:"Roboto", sans-serif;
-}
-.calendar .contrib-column .contrib-number{
-    color: #555;
-    font-size: 26px;
-}
-
-.calendar .contrib-footer{
-    font-size: 13px;
-    font-family: "Roboto",sans-serif;
-    color: var(--text-color);
-}
-.calendar .contrib-footer a{
-    text-decoration:none;
-    color: var(--violet-color);
-}
-
-@media screen and (max-width:420px){
-    .calendar .contrib-column .text-muted{
-        font-size: 6px;
-    }
-    .calendar .contrib-column .contrib-number{
-        font-size: 23px;
-    }
-    .calendar .contrib-footer{
-        font-size: 10px;
-    }
-    .ml-3, .mx-3{
-        margin-left: 0 !important;
-    }
-    .mr-3, .mx-3{
-        margin-right:0 !important;
-    }
-    .sec-title h2{
-        font-size: 27px;
-        text-align: center;
-    }
-    
-}
-@media screen and (max-width:400px){
-    .calender{
-        padding: 5px 0;
-    }
-    .calendar .contrib-column .text-muted{
-        font-size: 6px;
-    }
-    .calendar .contrib-column .contrib-number{
-        font-size: 21px;
-    }
-    .calendar .contrib-footer{
-        font-size: 9px;
-    }
-}
-@media screen and (max-width:385px){
-    
-    .calender{
-        padding: 5px 0;
-    }
-    .calendar .contrib-column .text-muted{
-        font-size: 6px;
-    }
-    .calendar .contrib-column .contrib-number{
-        font-size: 18px;
-    }
-    .calendar .contrib-footer{
-        font-size: 9px;
-    }
-    
-}
-@media screen and (max-width:360px){
-    .calendar .contrib-column .text-muted{
-        font-size: 5px;
-    }
-}
-@media screen and (max-width:360px){
-    .calendar .contrib-column .text-muted{
-        font-size: 4px;
-    }
-    .calendar .contrib-column .contrib-number{
-        font-size: 15px;
-    }
-}
 /*-------- head titles----- */
 .sec-title{
     margin: auto;
@@ -1094,6 +983,122 @@ button.clicked {
 
 
 /* ----------- PAPERS area start --------- */
+.papers .custom-sec{
+    padding-bottom: 50px;
+}
+/* github contribution graph */
+.calendar{
+    margin:0 auto;
+    text-align: center;
+    font-family: "Lato",sans-serif;
+    border-radius: 5px;
+    border: none !important;
+    padding: 20px 20px;
+    box-shadow: var(--box-shadow);
+    background: #ffffff;
+}
+
+.calendar .border{
+    border: none !important;
+}
+.calendar-graph text.month{
+    fill: var(--text-color);
+}
+.calendar-graph text.wday{
+    fill: var(--text-color);
+}
+
+.calendar .contrib-column{
+    border: none !important;
+
+}
+.calendar .contrib-column .text-muted{
+    color: var(--text-color);
+    font-size: 14px;
+    font-family:"Roboto", sans-serif;
+}
+.calendar .contrib-column .contrib-number{
+    color: #555;
+    font-size: 26px;
+}
+
+.calendar .contrib-footer{
+    font-size: 13px;
+    font-family: "Roboto",sans-serif;
+    color: var(--text-color);
+}
+.calendar .contrib-footer a{
+    text-decoration:none;
+    color: var(--violet-color);
+}
+
+@media screen and (max-width:420px){
+    .calendar .contrib-column .text-muted{
+        font-size: 6px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 23px;
+    }
+    .calendar .contrib-footer{
+        font-size: 10px;
+    }
+    .ml-3, .mx-3{
+        margin-left: 0 !important;
+    }
+    .mr-3, .mx-3{
+        margin-right:0 !important;
+    }
+    .sec-title h2{
+        font-size: 27px;
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width:400px){
+    .calender{
+        padding: 5px 0;
+    }
+    .calendar .contrib-column .text-muted{
+        font-size: 6px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 21px;
+    }
+    .calendar .contrib-footer{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:385px){
+    
+    .calender{
+        padding: 5px 0;
+    }
+    .calendar .contrib-column .text-muted{
+        font-size: 6px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 18px;
+    }
+    .calendar .contrib-footer{
+        font-size: 9px;
+    }
+    
+}
+@media screen and (max-width:360px){
+    .calendar .contrib-column .text-muted{
+        font-size: 5px;
+    }
+}
+@media screen and (max-width:360px){
+    .calendar .contrib-column .text-muted{
+        font-size: 4px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 15px;
+    }
+}
+
+/* github calendar end */
 
 .site-main .papers{
     background: whitesmoke;
@@ -1551,6 +1556,21 @@ button.clicked {
     .card-body .media{
         margin: 0 0;
     }
+}
+
+.gallery .gal-btn{
+    text-decoration: none;
+    color: white;
+    background: #E91E63;
+    padding: 9px 20px;
+    border-radius: 50px;
+    font-family: "Roboto",sans-serif;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 10px 10px;
+    transition: opacity 0.15s linear;
 }
 
 /*  show more section */

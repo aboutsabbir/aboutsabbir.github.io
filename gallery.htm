@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--------------Meta Tags------------------->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <meta http-equiv="x-ua-compitable" content="ie=edge">
+    <title>Welcome to Sabbir's Homepage!</title>
+
+     <!-- add icon to the title -->
+     <link rel = "icon" href =
+     "./img/logo.png" type = "image/x-icon">
+
+    <!--------------------Bootstrap CSS------------------>
+    <link rel="stylesheet" href="./bootstrap/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!---------------------Font-awesome Icons------------->
+    <link rel="stylesheet" href="./bootstrap/node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!------------------------Custom CSS-------------------->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+
+    <!-- jquery cdn -->
+    <script src="http://code.jquery.com/jquery-3.5.1.js" ></script>
+
+
+</head>
+<body>
+    <main class="site-gallery">
+        <section class="gallery">
+
+            <div class="container gal-title">
+                <div class="row row-content gal2-title">
+                  <h2 class="head-title text-center">Sabbir's <strong>Certificate Gallery</strong> </h2>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row row-content">
+                    <div class="order-sm-first">
+                        <a href="./index.htm" class="back">
+                            <span class="text-uppercase back-btn">
+                                <-- Return to Homepage
+                            </span>
+                        </a>
+                    </div>
+                    <div class="order-sm-last">
+                        <a href="./gallery.htm" class="reload">
+                            <span class="text-uppercase reload-btn">
+                                Reload for any issue
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- gallery content section start -->
+        <section class="gallery-content">
+            <div class="gal-con">
+                <div style="text-align: center;">
+                    <div class="navigation">
+                        <a href="#" data-filter="all" class="button active">All</a>
+                        <a href="#" data-filter="ml" class="button">Machine Learning</a>
+                        <a href="#" data-filter="python" class="button">Python</a>
+                        <a href="#" data-filter="tf" class="button">Tensorflow</a>
+                        <a href="#" data-filter="projects" class="button">Projects</a>
+                        <a href="#" data-filter="special" class="button">Specialization</a>
+                    </div>
+                    <div class="ImageContainer">
+                        <div class="filter ml">
+                            <p>Structuring Machine Learning Projects</p>
+                            <img src="./img/certificates/Coursera 3SMGRQD68CRR-1.jpg" alt="structuring ml projects">
+                        </div>
+                        <div class="filter ml">
+                            <p>Mathematics for Machine Learning: Linear Algebra</p>
+                            <img src="./img/certificates/Coursera 9LY3VRV4HEME-1.jpg" alt="linear algebra">
+                        </div>
+                        <div class="filter python">
+                            <p>Python Project: pillow, tesseract, and opencv</p>
+                            <img src="./img/certificates/Coursera BD3X3YPQDFP2-1.jpg" alt="python pillow">
+                        </div>
+                        <div class="filter projects python">
+                            <p>Object Tracking with OpenCV and Python</p>
+                            <img src="./img/certificates/Coursera CA5R4A2UT5K9-1.jpg" alt="project object tracking">
+                        </div>
+                        <div class="filter tf">
+                            <p>Introduction to TensorFlow for AI, ML and DL</p>
+                            <img src="./img/certificates/Coursera FKG57V22FUAG-1.jpg" alt="intro to tensorflow">
+                        </div>
+                        <div class="filter ml">
+                            <p>Neural Networks and Deep Learning</p>
+                            <img src="./img/certificates/Coursera PFGW9Z7EJDBS-1.jpg" alt="NN and dl">
+                        </div>
+                        <div class="filter python">
+                            <p>Data Visualization with Python</p>
+                            <img src="./img/certificates/Coursera QSJ6WA64WBFR-1.jpg" alt="visualize with python">
+                        </div>
+                        <div class="filter ml">
+                            <p>Hyperparameter tuning, Regularization & Optimization</p>
+                            <img src="./img/certificates/Coursera TD9WRFBRMFEF-1.jpg" alt="improving nn">
+                        </div>
+                        <div class="filter ml">
+                            <p>Mathematics for ML: Multivariate Calculus</p>
+                            <img src="./img/certificates/Coursera TWPEQQG3AWEG-1.jpg" alt="calculus">
+                        </div>
+                        <div class="filter projects python">
+                            <p>Predict Future Product Prices Using FB Prophet</p>
+                            <img src="./img/certificates/Coursera ZENSA49UXCTB-1.jpg" alt="project produc price">
+                        </div>
+                        <div class="filter ml">
+                            <p>Convolution Neural Networks</p>
+                            <img src="./img/certificates/Coursera ZHXEU4EYS2KT-1.jpg" alt="cnn DL">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- gallery content section end -->
+
+        <section class="contact">
+            <div class="container contact-title">
+                <div class="row row-content">
+                  <h2 class="head-title text-center">Get <strong>In Touch</strong> </h2>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var name = $(this).attr("data-filter");
+                if(name == "all"){
+                    $(".filter").show(500).fadeIn(3000);
+                    return false;
+                }
+                else{
+                    $(".filter").not("."+name).hide(500).fadeOut(3000);
+                    $(".filter").filter("."+name).show(500).fadeIn(3000);
+                    return false;
+                }
+            });
+            $(".navigation a").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+</body>
+</html>
