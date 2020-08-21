@@ -563,8 +563,8 @@ button.clicked {
 }
 
 .site-main .experience .nav-link{
-    color: #222;
-    opacity: 0.92;
+    color: #000;
+    opacity: 1;
 }
 .site-main .experience .nav-item .nav-link:hover{
     background-color: transparent;
@@ -586,6 +586,9 @@ button.clicked {
     padding-left: 25px;
     padding-right: 25px;
     margin-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
 }
 /* .site-main .experience i{
     color: var(--violet-color);
