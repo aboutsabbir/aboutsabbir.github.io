@@ -569,7 +569,7 @@ button.clicked {
 
 @media screen and (max-width:420px){
     .calendar .contrib-column .text-muted{
-        font-size: 7px;
+        font-size: 6px;
     }
     .calendar .contrib-column .contrib-number{
         font-size: 23px;
@@ -588,6 +588,20 @@ button.clicked {
         text-align: center;
     }
     
+}
+@media screen and (max-width:400px){
+    .calender{
+        padding: 5px 0;
+    }
+    .calendar .contrib-column .text-muted{
+        font-size: 6px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 21px;
+    }
+    .calendar .contrib-footer{
+        font-size: 9px;
+    }
 }
 @media screen and (max-width:385px){
     
