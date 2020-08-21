@@ -531,6 +531,9 @@ button.clicked {
     margin: auto;
     width: 100%;
 }
+.experience .sec-title{
+    padding-bottom: 45px;
+}
 .head-title{
     font-family: var(--poppins);
     color: #000;
@@ -986,7 +989,99 @@ button.clicked {
 .papers .custom-sec{
     padding-bottom: 50px;
 }
+
+/* portfolio gallery start */
+.portfolio-content .button{
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.portfolio-content .navigation{
+    padding-bottom: 50px;
+}
+
+.portfolio-content .navigation a{
+    margin-right: 5px;
+    padding:8px 14px;
+    color: #111;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.portfolio-content .navigation a.active{
+    color: var(--violet-color);
+}
+.portfolioContainer{
+    text-align: start;
+    min-height: 140px;
+}
+.portfolioContainer div{
+    display: inline-block;
+    padding-bottom:40px;
+    width: 250px;
+    margin: 5px 8px;
+    border: none;
+}
+
+.portfolioContainer a{
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+}
+.portfolioContainer a h4{
+    box-shadow: var(--box-shadow);
+    font-size: 20px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.5px;
+    padding: 1px 0;
+}
+
+.ml h4{
+    color: #e7305b;
+}
+.python h4{
+    color: dodgerblue;
+}
+.tf h4{
+    color: orangered;
+}
+.projects h4{
+    color: yellowgreen;
+}
+.illustrator h4{
+    color: orange;
+}
+
+.foot-text{
+    margin-top: 15px;
+    color: #444;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--poppins);
+    text-align: center;
+}
+
+@media screen and (max-width:440px){
+    .portfolioContainer{
+        text-align: center;
+    }
+    .portfolioContainer div{
+        display: inline-block;
+        padding-bottom:40px;
+        width: 80%;
+        margin: 5px 8px;
+        border: none;
+    }
+}
+/* portfolio gallery end */
+
 /* github contribution graph */
+.git-title{
+    padding-top:30px;
+}
 .calendar{
     margin:0 auto;
     text-align: center;

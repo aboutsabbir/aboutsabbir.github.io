@@ -31,6 +31,28 @@
     <!------------------------Custom CSS-------------------->
     <link rel="stylesheet" href="./css/styles.css">
 
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var name = $(this).attr("data-filter");
+                if(name == "all"){
+                    $(".filter").show(500).fadeIn(2000);
+                    return false;
+                }
+                else{
+                    $(".filter").not("."+name).hide(500).fadeOut(2000);
+                    $(".filter").filter("."+name).show(500).fadeIn(2000);
+                    return false;
+                }
+            });
+            $(".navigation a").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+
 </head>
 <body>
         <!---------------------  Navigation START---------------------------->
@@ -183,7 +205,7 @@
 
           <!------------------------Experience navigation tab start---------------------->
           <section class="experience" id="experience">
-            <div class="container sec-title">
+            <div class="container sec-title custom-ex">
               <div class="row row-content sec2-title">
                 <h2 class="head-title">My <strong>Resume</strong> </h2>
               </div>
@@ -616,7 +638,181 @@
               </div>
             </div>
 
-            <div class="container sec-title custom-sec">
+            <!-- portfolio gallery start -->
+            <section class="portfolio-content">
+              <div class="container">
+                <div class="port-con">
+                  <div style="text-align: center;">
+                      <div class="navigation">
+                          <a href="#" data-filter="all" class="button active">All</a>
+                          <a href="#" data-filter="ml" class="button">Machine Learning</a>
+                          <a href="#" data-filter="python" class="button">Python</a>
+                          <a href="#" data-filter="tf" class="button">TensorFlow</a>
+                          <a href="#" data-filter="illustrator" class="button">Illustrator</a>
+                          <a href="#" data-filter="projects" class="button">Projects</a>
+                          
+                      </div>
+                      <!-- main contents -->
+                      <div class="portfolioContainer">
+
+                        <!-- machine learning part -->
+                        <div class="filter ml">
+                          <a href="https://bit.ly/3gmXOxI" target="_blank">
+                          <h4>Face Recognition</h4>
+                          </a>
+                          <p class="foot-text">Machine Learning</p>
+                        </div>
+
+                        <div class="filter ml">
+                          <a href="https://bit.ly/3gh9ZvZ" target="_blank">
+                          <h4>Car Detection</h4>
+                          </a>
+                          <p class="foot-text">Machine Learning</p>
+                        </div>
+
+                        <div class="filter ml">
+                          <a href="https://github.com/aboutsabbir/Machine-Learning-Coursera/tree/master/machine-learning-ex6/ex6" target="_blank">
+                          <h4>Spam Classifier</h4>
+                          </a>
+                          <p class="foot-text">Machine Learning</p>
+                        </div>
+
+                        <div class="filter ml">
+                          <a href="https://github.com/aboutsabbir/Mathematics-for-Machine-Learning-Coursera/tree/master/Linear%20Algebra" target="_blank">
+                          <h4>Google PageRank</h4>
+                          </a>
+                          <p class="foot-text">Machine Learning</p>
+                        </div>
+
+                        <!-- python part -->
+                        <div class="filter python">
+                          <a href="https://github.com/aboutsabbir/Python-Project---Pillow-Tesseract-OpencCV" target="_blank">
+                          <h4>Tesseract</h4>
+                          </a>
+                          <p class="foot-text">Python</p>
+                        </div>
+                        
+                        <div class="filter python">
+                          <a href="https://github.com/aboutsabbir/Object-Tracking-with-OpenCV-and-Python---Coursera" target="_blank">
+                          <h4>Object Tracking</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <div class="filter python">
+                          <a href="https://github.com/aboutsabbir/UCF_Dataset_Preprocess" target="_blank">
+                          <h4>UCF Preprocess</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <!-- tensorflow part -->
+                        <div class="filter tf">
+                          <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
+                          <h4>VGG16 Model</h4>
+                          </a>
+                          <p class="foot-text">TensorFlow</p>
+                        </div>
+
+                        <div class="filter tf">
+                          <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
+                          <h4>MobileNet</h4>
+                          </a>
+                          <p class="foot-text">tensorflow</p>
+                        </div>
+
+                        <div class="filter tf">
+                          <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
+                          <h4>Data Augmentation</h4>
+                          </a>
+                          <p class="foot-text">tensorflow</p>
+                        </div>
+
+                        <!-- illustrator part -->
+                        <div class="filter illustrator">
+                          <a href="https://www.behance.net/gallery/64075511/Instagram-Logo" target="_blank">
+                          <h4>Insta Logo</h4>
+                          </a>
+                          <p class="foot-text">illustrator</p>
+                        </div>
+
+                        <div class="filter illustrator">
+                          <a href="https://www.behance.net/gallery/64112563/Designed-text?tracking_source=project_owner_other_projects" target="_blank">
+                          <h4>Typography</h4>
+                          </a>
+                          <p class="foot-text">illustrator</p>
+                        </div>
+
+                        <div class="filter illustrator">
+                          <a href="https://www.behance.net/gallery/64097787/MKBHD-Logo" target="_blank">
+                          <h4>MKBHD Theme</h4>
+                          </a>
+                          <p class="foot-text">illustrator</p>
+                        </div>
+                        <div class="filter illustrator">
+                          <a href="https://www.behance.net/gallery/64075355/Messenger-logo" target="_blank">
+                          <h4>Messenger</h4>
+                          </a>
+                          <p class="foot-text">illustrator</p>
+                        </div>
+
+                        <!-- project part -->
+                        <div class="filter projects">
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>Waffle Chart</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <div class="filter projects">
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>Word Cloud</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <div class="filter projects">
+                          <a href="https://github.com/aboutsabbir/Predict-Future-Product-Prices-using-Facebook-Prophet" target="_blank">
+                          <h4>FB Prophet</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <div class="filter projects">
+                          <a href="https://github.com/aboutsabbir/Covid-19-Case-prediction-using-Facebook-Prophet" target="_blank">
+                          <h4>Covid-19 Predict</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+                        <div class="filter projects">
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>World Map</h4>
+                          </a>
+                          <p class="foot-text">Projects</p>
+                        </div>
+
+
+                        
+                          <!--
+                              <div class="filter ">
+                          <a href="" target="_blank">
+                          <h4> </h4>
+                          </a>
+                          <p class="foot-text"> </p>
+                        </div>
+                          -->
+  
+  
+                      </div>
+                  </div>
+              </div>
+              </div>
+  
+          </section>
+          <!-- gallery content section end -->
+
+            <div class="container sec-title git-title">
               <div class="row row-content sec2-title">
                 <h2 class="head-title">GitHub Contribution <strong>Graph</strong> </h2>
               </div>
