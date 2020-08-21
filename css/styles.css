@@ -1397,11 +1397,11 @@ button.clicked {
         padding: 30px 20px;
     }
     .conference .confBody h6{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family:"Roboto", sans-serif;
     }
 
     .conference .confBody p{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
 }
@@ -1584,7 +1584,11 @@ button.clicked {
 .site-main .testimonials{
     background: whitesmoke;
     margin: 0;
-    padding: 70px 0 40px 0;
+}
+
+.testimonials .sec-title{
+    padding-bottom: 10px;
+    padding-top: 90px;
 }
 
 .site-main .testimonials .testimonial-title p{
