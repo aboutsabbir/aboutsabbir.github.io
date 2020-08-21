@@ -533,8 +533,6 @@ button.clicked {
     background: #ffffff;
 }
 
-
-
 .calendar .border{
     border: none !important;
 }
@@ -569,6 +567,54 @@ button.clicked {
     color: var(--violet-color);
 }
 
+
+@media screen and (max-width:400px){
+    .sec-title h2{
+        font-size: 27px;
+    }
+    .calender{
+        padding: 5px 0;
+    }
+    .calendar .contrib-column .text-muted{
+        font-size: 6px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 18px;
+    }
+    .calendar .contrib-footer{
+        font-size: 9px;
+    }
+    .ml-3, .mx-3{
+        margin-left: 0 !important;
+    }
+    .mr-3, .mx-3{
+        margin-right:0 !important;
+    }
+    
+}
+@media screen and (max-width:420px){
+    .calendar .contrib-column .text-muted{
+        font-size: 7px;
+    }
+    .calendar .contrib-column .contrib-number{
+        font-size: 23px;
+    }
+    .calendar .contrib-footer{
+        font-size: 10px;
+    }
+    .ml-3, .mx-3{
+        margin-left: 0 !important;
+    }
+    .mr-3, .mx-3{
+        margin-right:0 !important;
+    }
+    
+}
+@media screen and (max-width:360px){
+    .calendar .contrib-column .text-muted{
+        font-size: 5px;
+    }
+}
 /*-------- head titles----- */
 .sec-title{
     margin: auto;
