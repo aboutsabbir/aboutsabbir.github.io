@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <meta http-equiv="x-ua-compitable" content="ie=edge">
-    <title>Welcome to Sabbir's Homepage!</title>
+    <title>Sabbir's Certificate Gallery!</title>
 
      <!-- add icon to the title -->
      <link rel = "icon" href =
@@ -24,8 +24,26 @@
     <link rel="stylesheet" href="./css/gallery.css">
 
     <!-- jquery cdn -->
-    <script src="http://code.jquery.com/jquery-3.5.1.js" ></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $(".button").click(function(){
+                var name = $(this).attr("data-filter");
+                if(name == "all"){
+                    $(".filter").show(500).fadeIn(3000);
+                    return false;
+                }
+                else{
+                    $(".filter").not("."+name).hide(500).fadeOut(3000);
+                    $(".filter").filter("."+name).show(500).fadeIn(3000);
+                    return false;
+                }
+            });
+            $(".navigation a").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -131,26 +149,5 @@
         </section>
 
     </main>
-
-
-    <script>
-        $(document).ready(function(){
-            $(".button").click(function(){
-                var name = $(this).attr("data-filter");
-                if(name == "all"){
-                    $(".filter").show(500).fadeIn(3000);
-                    return false;
-                }
-                else{
-                    $(".filter").not("."+name).hide(500).fadeOut(3000);
-                    $(".filter").filter("."+name).show(500).fadeIn(3000);
-                    return false;
-                }
-            });
-            $(".navigation a").click(function(){
-                $(this).addClass("active").siblings().removeClass("active");
-            });
-        });
-    </script>
 </body>
 </html>
