@@ -1594,7 +1594,7 @@ button.clicked {
 .site-main .testimonials .testimonial-title p{
     padding: 1rem 7rem;
     color: #666;
-    font-family: var(--roboto);
+    font-family: "Roboto",sans-serif;
 }
 
 @media screen and (max-width: 812px){
