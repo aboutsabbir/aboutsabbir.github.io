@@ -10,9 +10,8 @@
 /* --------Start Navigation-------- */
 
 .navbar{
-    padding: 20px 80px;
-    background-color: white;
-
+    padding: 5px 80px;
+    background: transparent;
 }
 
 .navbar .hideFix{
@@ -23,7 +22,7 @@
     font:normal 450 15px/2px var(--roboto);
     text-transform: uppercase;
     padding: 1.5rem;
-    color: var(--title-color);
+    color: black;
 }
 
 .navbar-nav .active a{
@@ -41,31 +40,29 @@
 }
 
 #logo{
-    height: 70px;
+    height: 60px;
 }
-@media screen and (max-width: 500px){
-    .navbar{
-        padding: 20px 20px;
-    }
-    #logo{
-        height: 40px;
-    }
-}
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 812px){
     .nav-item .nav-link{
         font:normal 450 15px/2px var(--poppins);
     }
     .navbar{
-        padding: 20px 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background: white;
+        padding-top:5px;
+        padding-bottom: 5px;
     }
+    
     #logo{
-        height: 50px;
-        padding-left: 30px;
+        height: 40px;
+        padding-left: 15px;
     }
 }
 @media screen and (max-width: 550px){
     #logo{
-        padding-left: 0px;
+        padding-left: 5px;
     }
 }
 .navbar .navbar-collapse{
@@ -77,12 +74,12 @@
 .navbar-fixed {
     top: 0;
     z-index: 100;
-  position: fixed;
+    position: fixed;
     width: 100%;
 }
 
 .navbar-fixed{
-    background:#efefef;
+    background-color:#efefef;
     padding-top: 5px;
     padding-bottom: 5px;
     transition: all 300ms ease-in-out;
@@ -109,7 +106,7 @@
     display: none;
 }
 
-@media screen and (max-width:440px){
+@media screen and (max-width:812px){
     .navbar-fixed #logo{
         display: initial;
         height: 40px;
@@ -118,16 +115,110 @@
     .navbar-fixed{
         padding-right: 20px;
     }
-    .navbar{
-        padding-right: 20px;
-    }
 
     .navbar #logo{
-        margin-left: -14px;
+        margin-left: -10px;
     }
 }
 
 /* ----------END Navigation---------- */
+
+/* ---------Banner area start---------- */
+
+/* navbar banner */
+#home{
+    background: url('../img/banner/DSC_0115.jpg') no-repeat 0% 50%;
+    background-size: cover;
+    min-height: 750px;
+    position: relative;
+}
+
+.child{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav ul{
+    right: 0;
+}
+
+.site-banner{
+    top: 300px;
+    position: relative;
+}
+
+.site-banner .site-title{
+    text-align: center;
+    color: #fffff1;
+    margin: auto;
+    font-family: var(--poppins);
+}
+
+.site-banner .bordar{
+    display: block;
+    border-bottom: solid 4px var(--violet-color);
+    -moz-box-shadow: 0 0 8px #000;
+    -webkit-box-shadow: 0 0 8px #000;
+    box-shadow: 0 0 8px #000;
+}
+ .site-banner .site-title h1{
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.site-banner .site-title h1 strong{
+    font-weight: 500;
+    font-size: 4.3rem;
+}
+ .site-banner .site-title h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width: 600px){
+    
+}
+@media screen and (max-width: 812px){
+
+}
+
+@media screen and (max-width: 420px){
+
+    .site-banner .site-title .bordar{
+        min-height: 40px;
+        padding: 0;
+        margin: 0;
+    }
+    .site-banner .site-title h1{
+        font-size: 2.3rem;
+        font-weight: 300;
+        line-height: 40px;
+        color: #000;
+    }
+    
+    .site-banner .site-title h1 strong{
+        font-weight: 500;
+        font-size: 2.7rem;
+        line-height: 40px;
+        padding-bottom: 0;
+        margin-bottom:0;
+    }
+     .site-banner .site-title h4{
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        color: #000;
+    }
+    .site-banner{
+        top: 330px;
+        position: relative;
+    }
+}
+/* -----------Banner area END----------- */
 
 
 /*-------Footer Start---------------*/
@@ -246,90 +337,6 @@
 
 /* ----- End of Footer ---- */
 
-/* ---------Banner area start---------- */
-.site-main .site-banner{
-    background: url('../img/head-banner.png') no-repeat 0% 50%;
-    background-size: cover;
-
-}
-.site-main .site-banner .site-title{
-    padding-left: 100px;
-}
-
-.site-main .site-banner .site-title h3{
-    padding-top: 30%;
-    font-weight: 500;
-}
-
-.site-main .site-banner .site-title h3::after{
-    content: " ";
-    height: 2px;
-    width: 20vw;
-    background: black;
-    display: inline-block;
-    margin-left: 5%;
-    transform: translateY(-10px);
-
-}
-
-.site-main .site-banner .site-title h1{
-    font-size: 4.5rem;
-}
-.site-main .site-banner .site-title h4{
-    font-size: 1.5rem;
-}
-
-.site-main .site-banner .banner-img{
-    text-align: center;
-}
-
-.site-main .site-banner .banner-img img{
-    padding: 7rem 0;
-    width: 20rem;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 50%;
-    transition: transform 0.4s ease;
-
-}
-
-.site-main .site-banner .banner-img img:hover{
-
-    transform: scale(1.05);
-}
-
-@media screen and (max-width: 812px){
-    .site-main .site-banner .banner-img img{
-        visibility: hidden;
-        clear: both;
-         display: none;
-    }
-}
-
-@media screen and (max-width: 600px){
-    .site-main .site-banner .site-title h3{
-        padding-top: 22%;
-        font-weight: 500;
-    }
-}
-@media screen and (max-width: 812px){
-    .site-main .site-banner .site-title h3{
-        padding-top: 10%;
-        font-weight: 500;
-    }
-    .site-main .site-banner .site-title{
-        padding-left: 50px;
-        padding-bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 375px){
-    .site-main .site-banner .site-title{
-        padding-left: 20px;
-    }
-}
-/* -----------Banner area END----------- */
-
 /* ------------About area START------------ */
 
 
@@ -386,7 +393,7 @@
 }
 
 .fullName h1{
-    font-size: 4.6rem;
+    font-size: 4.7rem;
     font-weight: 500;
     font-style: normal;
     font-family: var(--roboto);
@@ -394,9 +401,9 @@
 }
 
 .name .title h5{
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #444;
     font-style: normal;
     font-family: var(--poppins);
     letter-spacing: 0.5px;
@@ -467,6 +474,24 @@
         height: 180px;
         width: 180px;
         margin-left: 10px;
+    }
+}
+@media screen and (max-width:440px){
+    .name .fullName{
+        text-align: center;
+    }
+    .name .title{
+        text-align: center;
+    }
+    
+    #about .potrait{
+        text-align: center;
+    }
+    #about .sec-title{
+        padding-top: 40px;
+    }
+    .nameInfo{
+        justify-content: center;
     }
 }
 @media screen and (max-width:320px){

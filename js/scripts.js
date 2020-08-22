@@ -1,15 +1,15 @@
 // sticky navbar on scroll
 $(window).scroll(function () {
-    //if you hard code, then use console
-    //.log to determine when you want the 
-    //nav bar to stick.  
-    //console.log($(window).scrollTop())
-  if ($(window).scrollTop() > 50) {
-    $('#navTop').addClass('navbar-fixed');
-  }
-  if ($(window).scrollTop() < 50) {
-    $('#navTop').removeClass('navbar-fixed');
-  }
+  //if you hard code, then use console
+  //.log to determine when you want the 
+  //nav bar to stick.  
+  //console.log($(window).scrollTop())
+if ($(window).scrollTop() > 150) {
+  $('#navTop').addClass('navbar-fixed');
+}
+if ($(window).scrollTop() < 150) {
+  $('#navTop').removeClass('navbar-fixed');
+}
 });
 
 // change active navbar link on click
