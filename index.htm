@@ -61,38 +61,45 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
+  
           <div class="collapse navbar-collapse navbar-right" id="navbarNav">
               <!-- ---Lets shift the nav items to the right-->
               <div class="mr-auto">
               </div>
-                <ul class="navbar-nav navbar-right">
-                 <li class="nav-item active">
+                <ul class="navbar-nav navbar-right" id="menu">
+                <li class="nav-item active">
                   <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                 </li>
-                 <li class="nav-item">
+                </li>
+                <li class="nav-item">
                   <a class="nav-link" href="#about">Profile</a>
                   </li>
-                 <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link" href="#experience">Resume</a>
                   </li>
-                  <li class="nav-item">
+                <li class="nav-item">
+                  <a class="nav-link" href="#papers">Portfolio</a>
+                  </li>
+                  <li class="nav-item hideFix">
                   <a class="nav-link" href="#achievements">Achievements</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item hideFix">
+                  <a class="nav-link" href="#testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item hideNorm">
                   <a class="nav-link" href="./blog.htm">Blog</a>
                   </li>
                   <li class="nav-item">
                   <a class="nav-link" href="#contact-me" >Contact</a>
-                 </li>
+                </li>
                 </ul>
           </div>
         </nav>
-
         <!----------------------Navigation End---------------------------->
-
+  
         <!--------------------Main area start----------------------------->
         <main class="site-main">
+          
+
           <!--------------------------BANNER START----------------------->
           <section class="site-banner" id="home">
             <div class="container">
@@ -118,9 +125,9 @@
           <!--------------------------BANNER END------------------------->
 
           <!-- scroll to the top button -->
-            <a href="#navTop" class="scrollUp">
+            <!-- <a href="#navTop" class="scrollUp">
               <i class="fas fa-angle-up"></i>
-            </a>
+            </a> -->
 
           <!---------------------------About START----------------------->
           <section class="about-area" id="about">
@@ -649,7 +656,6 @@
                           <a href="#" data-filter="python" class="button">Python</a>
                           <a href="#" data-filter="tf" class="button">TensorFlow</a>
                           <a href="#" data-filter="illustrator" class="button">Illustrator</a>
-                          <a href="#" data-filter="projects" class="button">Projects</a>
                           
                       </div>
                       <!-- main contents -->
@@ -684,42 +690,45 @@
                           <p class="foot-text">Machine Learning</p>
                         </div>
 
-                        <!-- python part -->
-                        <div class="filter python">
-                          <a href="https://github.com/aboutsabbir/Python-Project---Pillow-Tesseract-OpencCV" target="_blank">
-                          <h4>Tesseract</h4>
+                        <div class="filter ml">
+                          <a href="https://github.com/aboutsabbir/Covid-19-Case-prediction-using-Facebook-Prophet" target="_blank">
+                          <h4>Covid-19 Predict</h4>
                           </a>
-                          <p class="foot-text">Python</p>
+                          <p class="foot-text">Machine Learning</p>
                         </div>
+
+                        <!-- python part -->
                         
                         <div class="filter python">
                           <a href="https://github.com/aboutsabbir/Object-Tracking-with-OpenCV-and-Python---Coursera" target="_blank">
                           <h4>Object Tracking</h4>
                           </a>
-                          <p class="foot-text">Projects</p>
+                          <p class="foot-text">Python</p>
                         </div>
 
                         <div class="filter python">
-                          <a href="https://github.com/aboutsabbir/UCF_Dataset_Preprocess" target="_blank">
-                          <h4>UCF Preprocess</h4>
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>Waffle Chart</h4>
                           </a>
-                          <p class="foot-text">Projects</p>
+                          <p class="foot-text">Python</p>
                         </div>
+
+                        <div class="filter python">
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>Word Cloud</h4>
+                          </a>
+                          <p class="foot-text">Python</p>
+                        </div>
+
+                        <div class="filter python">
+                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
+                          <h4>World Map</h4>
+                          </a>
+                          <p class="foot-text">Python</p>
+                        </div>
+
 
                         <!-- tensorflow part -->
-                        <div class="filter tf">
-                          <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
-                          <h4>VGG16 Model</h4>
-                          </a>
-                          <p class="foot-text">TensorFlow</p>
-                        </div>
-
-                        <div class="filter tf">
-                          <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
-                          <h4>MobileNet</h4>
-                          </a>
-                          <p class="foot-text">tensorflow</p>
-                        </div>
 
                         <div class="filter tf">
                           <a href="https://github.com/aboutsabbir/KerasTutorial-DeepLizard" target="_blank">
@@ -744,56 +753,13 @@
                         </div>
 
                         <div class="filter illustrator">
-                          <a href="https://www.behance.net/gallery/64097787/MKBHD-Logo" target="_blank">
-                          <h4>MKBHD Theme</h4>
-                          </a>
-                          <p class="foot-text">illustrator</p>
-                        </div>
-                        <div class="filter illustrator">
                           <a href="https://www.behance.net/gallery/64075355/Messenger-logo" target="_blank">
                           <h4>Messenger</h4>
                           </a>
                           <p class="foot-text">illustrator</p>
                         </div>
 
-                        <!-- project part -->
-                        <div class="filter projects">
-                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
-                          <h4>Waffle Chart</h4>
-                          </a>
-                          <p class="foot-text">Projects</p>
-                        </div>
-
-                        <div class="filter projects">
-                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
-                          <h4>Word Cloud</h4>
-                          </a>
-                          <p class="foot-text">Projects</p>
-                        </div>
-
-                        <div class="filter projects">
-                          <a href="https://github.com/aboutsabbir/Predict-Future-Product-Prices-using-Facebook-Prophet" target="_blank">
-                          <h4>FB Prophet</h4>
-                          </a>
-                          <p class="foot-text">Projects</p>
-                        </div>
-
-                        <div class="filter projects">
-                          <a href="https://github.com/aboutsabbir/Covid-19-Case-prediction-using-Facebook-Prophet" target="_blank">
-                          <h4>Covid-19 Predict</h4>
-                          </a>
-                          <p class="foot-text">Projects</p>
-                        </div>
-
-                        <div class="filter projects">
-                          <a href="https://github.com/aboutsabbir/Data-Visualization-with-Python-Coursera/tree/master/week%203" target="_blank">
-                          <h4>World Map</h4>
-                          </a>
-                          <p class="foot-text">Projects</p>
-                        </div>
-
-
-                        
+    
                           <!--
                               <div class="filter ">
                           <a href="" target="_blank">
@@ -1208,8 +1174,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./js/parallax.min.js"></script>
 
-    <!----------------------smooth scrolling ---------------------->
+    <!----------------------custom script ---------------------->
+    <script src="./js/nav.js"></script>
     <script src="./js/scripts.js"></script>
+    
     
     <!-----------------------github calender-------------------- -->
     <!-- Include the library. -->
@@ -1253,7 +1221,7 @@
 
 
     <!-- scroll to the top button -->
-    <script>
+    <!-- <script>
       const scrollUp = document.querySelector('.scrollUp');
 
       window.addEventListener('scroll', () => {
@@ -1263,7 +1231,7 @@
           scrollUp.classList.remove("active");
         }
       });
-    </script>
+    </script> -->
 
 
 </body>

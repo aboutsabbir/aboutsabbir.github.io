@@ -1,64 +1,31 @@
-// function smoothScroll(target, duration){
-//     var target = document.querySelector(target);
-//     var targetPosition = target.getBoundingClientRect().top;
-//     var startPosition = window.pageYOffset;
-//     var distance = targetPosition - startPosition;
-//     var startTime = null;
+// sticky navbar on scroll
+$(window).scroll(function () {
+    //if you hard code, then use console
+    //.log to determine when you want the 
+    //nav bar to stick.  
+    //console.log($(window).scrollTop())
+  if ($(window).scrollTop() > 50) {
+    $('#navTop').addClass('navbar-fixed');
+  }
+  if ($(window).scrollTop() < 50) {
+    $('#navTop').removeClass('navbar-fixed');
+  }
+});
 
-//     function animation(currentTime){
-//         if(startTime === null) startTime = currentTime;
-//         var timeElapsed = currentTime - startTime;
-//         var run = ease(timeElapsed, startPosition, distance, duration);
-//         window.scrollTo(0, run);
-//         if(timeElapsed < duration) requestAnimationFrame(animation);
-//     }
+// change active navbar link on click
+var selector = '.navbar li';
 
-//     function ease(t, b, c, d){
-//         t /= d / 2;
-//         if (t<1) return c / 2 * t * t + b;
-//         t--;
-//         return -c / 2 * (t* (t-2) -1) + b;
-//     }
+$(selector).on('click', function(){
+    $(selector).removeClass('active');
+    $(this).addClass('active');
+});
 
-//     requestAnimationFrame(animation);
-// }
-
-
-
-// var banner = document.querySelector('.banner-hd');
-
-// banner.addEventListener('click', function(){
-//     smoothScroll('.site-banner', 1000);
-// });
-
-// var footer = document.querySelector('.contacts');
-
-// footer.addEventListener('click', function(){
-//     smoothScroll('.footer', 1000);
-// });
-
-// Select all links with hashes
-//$('a[href*="#"]')
-  // Remove links that don't actually link to anything
- // .not('[href="#"]')
- // .not('[href="#0"]')
- // .click(function(event) {
-    // On-page links
- //   if (
-  //    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-  //    && 
-  //    location.hostname == this.hostname
-  //  ) {
-      // Figure out element to scroll to
-  //    var target = $(this.hash);
-  //    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-  //    if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-  //      event.preventDefault();
-   //     $('html, body').animate({
-   //       scrollTop: target.offset().top
-   //     }, 1000);
-   //   }
-  //  }
-  //});
+//chnge nav link color on scroll
+$('#menu').onePageNav({
+	currentClass: 'active',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: '',
+	easing: 'swing'
+});

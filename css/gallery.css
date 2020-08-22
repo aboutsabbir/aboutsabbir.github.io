@@ -11,6 +11,10 @@ body{
     background: #efefef;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .gallery .gal-title{
     padding-top:70px;
     padding-bottom: 40px;
