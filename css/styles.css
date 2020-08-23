@@ -184,9 +184,12 @@ nav ul{
 @media screen and (max-width: 600px){
     
 }
-@media screen and (max-width: 812px){
+@media screen and (max-width: 768px){
     #home{
         min-height: 730px;
+    }
+    .site-banner{
+        top: 305px;
     }
 }
 
@@ -217,7 +220,7 @@ nav ul{
         letter-spacing: 2px;
     }
     .site-banner{
-        top: 312px;
+        top: 330px;
         position: relative;
     }
     #home{
