@@ -183,13 +183,13 @@ nav ul{
     
 }
 @media screen and (max-width: 812px){
-
-}
-
-@media screen and (max-width: 420px){
     .site-banner .site-title{
         font-family: "Roboto",sans-serif;
     }
+}
+
+@media screen and (max-width: 420px){
+    
 
     .site-banner .site-title .bordar{
         min-height: 40px;
