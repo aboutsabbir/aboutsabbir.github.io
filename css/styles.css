@@ -484,12 +484,16 @@ nav ul{
     
     #about .potrait{
         text-align: center;
+        margin-left:28px;
     }
     #about .sec-title{
         padding-top: 40px;
     }
     .nameInfo{
         justify-content: center;
+    }
+    .site-main .about-area .potrait img{
+        margin:0 auto;
     }
 }
 @media screen and (max-width:320px){
@@ -754,26 +758,29 @@ button.clicked {
 
 .site-main .experience #education .media .media-body{
     margin-left: 20px;
-    padding-left: 25px;
+    padding-left: 30px;
     border-left: 1.5px solid var(--violet-color);
 }
 
 .site-main .experience #education p{
-    font: normal 400 16px/20px var(--poppins);
+    font: normal 400 19px/25px "Roboto",sans-serif;
     margin-bottom: 8px;
+    color: #E91E63;
 }
 
 .site-main .experience .media .time{
     display: inline-block;
-    padding: 0px 15px;
-    border-radius: 35px;
-    border: 1.3px solid var(--violet-color);
-    background: var(--violet-color);
-    color: whitesmoke;
-    font: normal 400 13px/17px var(--poppins);
+    color: #222;
+    font: normal 400 15px/17px "Roboto",sans-serif;
+}
+.site-main .experience .media .time i{
+    padding-right: 2px;
 }
 
 .site-main .experience #education h4{
+    font-size: 27px;
+    font-family: "Roboto",sans-serif;
+    font-weight: 400;
     margin-bottom: 11px;
     color: #333;
 }
@@ -792,10 +799,13 @@ button.clicked {
         border-left: 1.5px solid var(--violet-color);
     }
     .site-main .experience #education h4{
-        font-size: 19px;
+        font-size: 20px;
     }
     .site-main .experience #education p{
-        font-size: 14px;
+        font-size: 16px;
+    }
+    .site-main .experience .media .time{
+        font-size: 14px;    
     }
 }
 
