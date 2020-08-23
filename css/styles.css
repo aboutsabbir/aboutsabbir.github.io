@@ -1621,6 +1621,7 @@ button.clicked {
 /*------------Achievement start ------------ */
 .achievements{
     padding: 40px 0 90px 0;
+    background: white;
 }
 
 .achievements .card-header{
@@ -1713,6 +1714,10 @@ button.clicked {
 .card-cert{
     margin:0 auto;
     width: 17rem;
+    transition: transform 0.5s ease-in-out;
+}
+.card-cert:hover{
+    transform: scale(1.03);
 }
 
 .card-cert .card-body{
@@ -1850,8 +1855,73 @@ button.clicked {
     }
 }
 
+.carousel-caption{
+    color:#efefef;
+    font-family: "Roboto",sans-serif;
+}
+.slider-area{
+    background: #262626;
+    padding: 50px 0;
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 90px;
+}
+.img-area{
+    width: 115px;
+    height: 115px;
+    margin: auto;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img-area img{
+    width: 100%;
+}
+.carousel-caption{
+    position: static;
+    padding-bottom:15px;
+    padding-top: 0;
+}
+.carousel-caption h3{
+    font-size: 28px;
+    margin-bottom: 13px;
+    margin-top: 25px;
+    color: goldenrod;
+}
+.carousel-caption h4{
+    font-weight: 400;
+    font-size-adjust: 20px;
+    color: #999;
+}
+.carousel-caption p{
+    font-size: 17px;
+    font-weight: 300;
+    margin: auto;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel-indicators{
+    bottom: -30px;
+}
+@media screen and (max-width:768px){
+    .carousel-caption p{
+        font-size: 14px;
+    }
+}
+body{
+    background: whitesmoke;
+}
 
 /* ----------Testimonial end------------- */
+
+/* contact area start  */
+.site-main .contact{
+    padding: 40px 0 90px 0;
+    background: white;
+}
+/* contact area end */
 
 /* scroll to the top */
 
