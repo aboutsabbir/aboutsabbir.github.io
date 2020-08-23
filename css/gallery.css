@@ -5,7 +5,7 @@
 @import url(./partials/variables.css);
 
 /*  import global css file */
-@import url(./partials/_global.css);
+@import url(./partials/global.css);
 
 body{
     background: #efefef;

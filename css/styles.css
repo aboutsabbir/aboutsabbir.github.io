@@ -5,7 +5,7 @@
 @import url(./partials/variables.css);
 
 /*  import global css file */
-@import url(./partials/_global.css);
+@import url(./partials/global.css);
 
 /* --------Start Navigation-------- */
 
@@ -168,7 +168,7 @@ nav ul{
 }
 
 .site-banner .site-title h1 strong{
-    font-weight: 500;
+    font-weight: 600;
     font-size: 4.3rem;
 }
  .site-banner .site-title h4{
@@ -176,7 +176,7 @@ nav ul{
     font-weight: 400;
     letter-spacing: 2px;
     color: whitesmoke;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 
