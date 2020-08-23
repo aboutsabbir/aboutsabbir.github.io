@@ -129,7 +129,7 @@
 #home{
     background: url('../img/banner/DSC_0115.jpg') no-repeat 0% 50%;
     background-size: cover;
-    min-height: 750px;
+    min-height: 730px;
     position: relative;
 }
 
@@ -143,7 +143,7 @@ nav ul{
 }
 
 .site-banner{
-    top: 300px;
+    top: 290px;
     position: relative;
 }
 
@@ -185,7 +185,9 @@ nav ul{
     
 }
 @media screen and (max-width: 812px){
-
+    #home{
+        min-height: 730px;
+    }
 }
 
 @media screen and (max-width: 420px){
@@ -215,9 +217,13 @@ nav ul{
         letter-spacing: 2px;
     }
     .site-banner{
-        top: 330px;
+        top: 312px;
         position: relative;
     }
+    #home{
+        min-height: 750px;
+    }
+    
 }
 /* -----------Banner area END----------- */
 
@@ -531,6 +537,7 @@ nav ul{
     font-style: normal;
     font-weight: 400;
     text-align: justify;
+    font-family: "Roboto",sans-serif;
 }
 
 .about-title .paragraph{
