@@ -149,9 +149,9 @@ nav ul{
 
 .site-banner .site-title{
     text-align: center;
-    color: #ffffff;
-    margin: auto;
-    font-family: var(--poppins);
+    color: white;
+    margin: 0 auto;
+    font-family: "Roboto",sans-serif;
 }
 
 .site-banner .bordar{
@@ -183,9 +183,7 @@ nav ul{
     
 }
 @media screen and (max-width: 812px){
-    .site-banner .site-title{
-        font-family: "Roboto",sans-serif;
-    }
+
 }
 
 @media screen and (max-width: 420px){
