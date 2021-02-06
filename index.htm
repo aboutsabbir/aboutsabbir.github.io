@@ -28,6 +28,11 @@
      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
 
+    <!-- Include the library. -->
+    <script
+      src="//unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+    </script>
+
     <!------------------------Custom CSS-------------------->
     <link rel="stylesheet" href="./css/styles.css">
 
@@ -885,7 +890,7 @@
                               Rajshahi University of Engineering & Technology (RUET)
                             </p>
                             <p class="thesis-topic">
-                              Segmentation and Classification of Brain Tumor.
+                              Segmentation and Classification of Brain Tumor from 2D MRI Images.
                             </p>
                             <p class="thesis-title">
                               Thesis Title: <q>
@@ -919,7 +924,7 @@
                             <h6 class="align-self-center">[1]</h6>
                           </div>
                           <div class="col-11 col-sm-11 confBody confCustom text-left">
-                            <h6 class="confTitle"> A Comprehensive Comparison Between Boost and Buck-Boost Converters in Solar MPPT With Artificial Neural Network.</h6>
+                            <h6 class="confTitle" style="text-align: justify;"> A Comprehensive Comparison Between Boost and Buck-Boost Converters in Solar MPPT With Artificial Neural Network.</h6>
                             <p class="writters">Omar Kamrul Islam, Md. Sabbir Ahmed, Khalilur Rahman and Tasnia Tahsin</p>
                             <p class="date">Date: Dec 22, 2020</p>
                             <a href="#" target="_blank">See paper</a>
@@ -1242,7 +1247,7 @@
             </div>
           </div>
 
-          <p class="footer-bottom">&copy; 2020 Copyright: Sabbir Ahmed Badhon</p>
+          <p class="footer-bottom" id="footer-bottom"></p>
         </footer>
         <!----------------------------Footer End------------------------>
 
@@ -1256,21 +1261,21 @@
     <script src="./js/parallax.min.js"></script>
     
     <!-----------------------github calender-------------------- -->
-    <!-- Include the library. -->
-    <script
-      src="//unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-    </script>
-
     <script>
       GitHubCalendar(".calendar", "aboutsabbir");
 
       // or enable responsive functionality:
-      GitHubCalendar(".calendar", "aboutsabbir", { responsive: true });
+      GitHubCalendar(".calendar", "aboutsabbir", { responsive: true })
     </script>
 
     <!----------------------custom script ---------------------->
     <script src="./js/nav.js"></script>
     <script src="./js/scripts.js"></script>
+
+    <script>
+      var d = new Date();
+      document.getElementById("footer-bottom").innerHTML = "&copy; " + d.getFullYear() + " Copyright: Sabbir Ahmed Badhon";
+    </script>
     
     
     
